@@ -1,8 +1,8 @@
 /* Contact page: standalone inner page (no hero), so the fixed header stays in
    its light "scrolled" appearance at all times, regardless of scroll position. */
 .inner-page .site-header {
-  background: rgba(247, 248, 251, .97) !important;
-  box-shadow: 0 2px 14px rgba(17, 27, 44, .1);
+  background: rgba(248, 247, 242, .97) !important;
+  box-shadow: 0 2px 14px rgba(23, 43, 33, .1);
   color: var(--ink) !important;
 }
 .inner-page .logo-default { display: none !important; }
@@ -102,6 +102,50 @@
   border-color: var(--green);
 }
 .form-row textarea { resize: vertical; line-height: 1.6; }
+
+.form-optional { font-weight: 400; letter-spacing: 0; color: var(--muted); text-transform: none; }
+
+.file-field {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.file-field input[type="file"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+}
+.file-field-btn {
+  display: inline-flex;
+  align-items: center;
+  flex: none;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 12px 22px !important;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  background: #fff;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  cursor: pointer;
+  transition: border-color .2s, color .2s;
+}
+.file-field-btn:hover { border-color: var(--green); color: var(--green); }
+.file-field input[type="file"]:focus-visible + .file-field-btn {
+  outline: 2px solid var(--green);
+  outline-offset: 2px;
+}
+.file-field-name {
+  font-size: 13.5px;
+  color: var(--muted);
+}
+.file-field-name.is-error { color: #c0392b; }
+
 .form-submit-row {
   display: flex;
   align-items: center;

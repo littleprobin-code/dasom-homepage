@@ -1,12 +1,12 @@
 :root {
-  --ink: #172b21;
-  --green: #2f5b20;
-  --lime: #b9df50;
-  --sand: #ede8dc;
-  --paper: #f8f7f2;
-  --cream: #d9d0b9;
-  --muted: #758078;
-  --line: rgba(23,43,33,.16);
+  --ink: #111b2c;
+  --green: #183362;
+  --lime: #4cabe6;
+  --sand: #e8ecf1;
+  --paper: #f7f8fb;
+  --cream: #ccd6e2;
+  --muted: #6c7788;
+  --line: rgba(17,27,44,.16);
   --font: 'DM Sans','Noto Sans KR',sans-serif
 }
 * {
@@ -237,7 +237,7 @@ h1 em {
 }
 .leaf {
   position: absolute;
-  background: #1f3d15;
+  background: #0e2245;
   width: 110px;
   height: 55px;
   border-radius: 100% 0 100% 0;
@@ -297,7 +297,7 @@ h1 em {
 .company-text {
   padding-top: 43px;
   font-size: 18px;
-  color: #435248
+  color: #46494f
 }
 .company-text p {
   margin-bottom: 20px
@@ -472,7 +472,7 @@ h1 em {
 .brand-heading>p {
   width: 30%;
   margin: 0 0 10px;
-  color: #526058
+  color: #55585d
 }
 .product-stage {
   display: grid;
@@ -495,10 +495,26 @@ h1 em {
   margin: 18px 0
 }
 .product-copy p {
-  color: #59665c;
+  color: #5c5f63;
   font-size: 15px;
   max-width: 260px
 }
+.store-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 24px;
+  background: var(--ink);
+  color: #fff;
+  padding: 17px 26px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: .02em;
+  border-radius: 2px;
+  transition: opacity .2s
+}
+.store-link:hover { opacity: .85 }
+.store-link span { font-size: 21px }
 .stage-controls {
   display: flex;
   gap: 8px;
@@ -565,7 +581,7 @@ h1 em {
   color: #173e29
 }
 .seaweed i {
-  background: #2f5b20
+  background: #183362
 }
 .nut {
   background: #d5b37a;
@@ -586,7 +602,7 @@ h1 em {
 }
 .asset-note {
   font-size: 13px;
-  color: #778078;
+  color: #797b7e;
   margin: 40px 0 0
 }
 .asset-note code {
@@ -623,11 +639,11 @@ h1 em {
 .partnership {
   overflow: hidden;
   min-height: 680px;
-  background: #b9d85c;
+  background: #5ca8d8;
   padding-right: 45%;
   }
 .partnership .section-label {
-  color: #547630
+  color: #304a76
 }
 .partnership-inner {
   position: relative;
@@ -637,11 +653,11 @@ h1 em {
   font-size: clamp(46px,5vw,72px)
 }
 .partnership h2 em {
-  color: #2f5b20
+  color: #183362
 }
 .partnership-inner>p:last-of-type {
   margin: 25px 0 35px;
-  color: #3d5834
+  color: #344158
 }
 .button {
   display: inline-flex;
@@ -758,7 +774,7 @@ h1 em {
   padding-top: 20px;
   margin-top: 105px;
   font-size: 14px;
-  color: #637067
+  color: #66696d
 }
 .back-top {
   font-size: 12px;

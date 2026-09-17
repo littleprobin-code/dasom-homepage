@@ -15,9 +15,9 @@
 <body class="inner-page">
   <a class="skip" href="#main">본문으로 바로가기</a>
   <header class="site-header scrolled" id="top">
-    <a class="logo" href="index.html" aria-label="DASOM FOODMARKET 홈">
-      <img class="logo-img logo-default" src="assets/images/logo-white.png" alt="DASOM FOODMARKET">
-      <img class="logo-img logo-scrolled" src="assets/images/logo-color.png" alt="DASOM FOODMARKET">
+    <a class="logo" href="index.html" aria-label="DASOM INTERNATIONAL 홈">
+      <img class="logo-img logo-default" src="assets/images/logo-white.png" alt="DASOM INTERNATIONAL">
+      <img class="logo-img logo-scrolled" src="assets/images/logo-color.png" alt="DASOM INTERNATIONAL">
     </a>
     <button class="menu-toggle" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span><span class="sr-only">메뉴 열기</span></button>
     <nav id="menu" class="nav" aria-label="주요 메뉴">
@@ -49,7 +49,7 @@
 
       <div class="contact-form-wrap">
         <h2>Contact us</h2>
-        <form id="contact-form" novalidate>
+        <form id="contact-form" novalidate enctype="multipart/form-data">
           <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
           <input type="hidden" name="subject" value="다솜인터내셔널 웹사이트 문의">
           <input type="hidden" name="from_name" value="DASOM 홈페이지 문의 폼">
@@ -65,6 +65,14 @@
           <div class="form-row">
             <label for="cf-message">메세지</label>
             <textarea id="cf-message" name="message" rows="8" required></textarea>
+          </div>
+          <div class="form-row">
+            <label for="cf-file">첨부파일 <span class="form-optional">(선택, 최대 5MB)</span></label>
+            <div class="file-field">
+              <input id="cf-file" name="attachment" type="file" accept=".jpg,.jpeg,.png,.pdf,.doc,.docx,.xls,.xlsx,.zip">
+              <label for="cf-file" class="file-field-btn">파일 선택</label>
+              <span class="file-field-name" id="cf-file-name">선택된 파일 없음</span>
+            </div>
           </div>
           <div class="form-submit-row">
             <button class="button" type="submit">보내기 <span>↗</span></button>
