@@ -50,7 +50,7 @@
 .product-art i { display:none; }
 .soy { background-image:url('assets/images/beannbean.png'); }
 .erom-product { background-image:url('assets/images/erom.png'); }
-.milk-product { background-image:url('assets/images/hero-01.jpG'); }
+.milk-product { background-image:url('assets/images/hero-01.jpg'); }
 .gim-product { background-image:url('assets/images/daechonkim.jpg'); background-position:center 30%; }
 .card-ink { overflow:hidden; background-image:linear-gradient(180deg,rgba(17,27,44,.25),rgba(17,27,44,.83)),url('assets/images/orion.jpg'); background-size:cover; background-position:center; color:#fff; }
 .card-ink p { color:rgba(255,255,255,.82); }
